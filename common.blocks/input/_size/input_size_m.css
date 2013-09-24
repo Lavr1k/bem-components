@@ -1,8 +1,14 @@
 .input_size_m
 {
-    line-height: 32px;
+    height: 32px;
+    line-height: 100%;
 
     font-size: 15px;
+}
+
+.input_size_m .input__box
+{
+    height: 100%;
 }
 
 .input_size_m .input__clear
@@ -12,10 +18,18 @@
 
 .input_size_m .input__control
 {
-    padding-left: 10px;
+    height: 31px;
+    padding: 0 0 0 10px;
 }
 
 .input_size_m .input__hint
 {
+    line-height: 32px;
+
     padding-left: 11px;
+}
+
+.input_size_m .input__found
+{
+    line-height: 32px;
 }
