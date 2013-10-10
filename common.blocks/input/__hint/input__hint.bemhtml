@@ -4,4 +4,13 @@ block input, elem hint {
 
     attrs: { 'for': this._inputId }
 
+    !this._value, this._value !== 0, default: {
+        var ctx = this.ctx,
+            elemMods = ctx.elemMods || (ctx.elemMods = {});
+
+        elemMods.visibility = 'visible';
+
+        return applyCtx(ctx);
+    }
+
 }
