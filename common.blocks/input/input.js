@@ -46,6 +46,16 @@ BEM.DOM.decl('input', /** @lends Block.prototype */ {
     },
 
     /**
+     * Метод для проверки поддержки браузером атрибута placeholder
+     * @protected
+     * @return {Boolean} true - если блок поддерживает атрибут
+     * false в остальных случаях
+     */
+    isPlaceholderSupport : function() {
+        return 'placeholder' in document.createElement('input');
+    },
+
+    /**
      * Метод для проверки наличия у блока модификатора disabled
      * @protected
      * @return {Boolean} true - если блок находится в отключенном состоянии,
